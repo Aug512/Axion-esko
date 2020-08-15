@@ -3,32 +3,16 @@ body {
   margin: 0;
 }
 
-.wrapper {
-  width: 1030px;
-  margin: 0 auto;
-}
-
 .header {
   height: 95px;
   display: flex;
   justify-content: flex-start;
   align-items: center;
   margin-bottom: 20px;
-  
-  &__logo {
-    margin-right: 45px;
-    padding-top: 25px;
-  }
 
   &__nav {
     display: flex;
     justify-content: center;
-    padding-top: 23px;
-    margin-right: 158px;
-  }
-
-  &__sandwitch-button {
-    display: none;
   }
 }
 
@@ -39,23 +23,17 @@ body {
   text-transform: uppercase;
   text-decoration: none;
   color: #000;
-  margin-right: 35px;
 }
 
 .user-activity {
-
   display: flex;
   justify-content: center;
   align-items: center;
   position: relative;
-  padding-top: 23px;
 
   &__search {
     border: none;
     border-bottom: 2px solid black;
-    width: 174px;
-    margin-right: 35px;
-    padding-bottom: 10px;
     outline: none;
 
     &--button {
@@ -63,7 +41,7 @@ body {
       height: 14px;
       padding: 0;
       position: absolute;
-      left: 162px;
+      left: 163px;
       top: 31px;
       font-size: 0;
       border: none;
@@ -79,7 +57,6 @@ body {
     text-transform: uppercase;
     text-decoration: none;
     color: #000;
-    margin-right: 35px;
   }
 
   &__cart {
@@ -89,7 +66,6 @@ body {
     text-transform: uppercase;
     text-decoration: none;
     color: #000;
-    margin-right: 35px;
 
     &--items-counter {
       display: inline-block;
@@ -109,7 +85,6 @@ body {
   }
 
   &__lang {
-
     width: 20px;
     height: 20px;
     border: none;
@@ -125,11 +100,11 @@ body {
 
 .banner {
   width: 100%;
-  height: 281px;
   background-image: url("/img/banner1.jpg");
+  background-position: 50%;
+  background-size: cover;
   text-transform: uppercase;
   color: #fff;
-  margin-bottom: 54px;
 
   &__title {
     margin: 0;
@@ -137,8 +112,6 @@ body {
     line-height: 29px;
     width: 195px;
     position: relative;
-    top: 91px;
-    left: 60px;
   }
 
   &__link {
@@ -148,13 +121,10 @@ body {
     text-decoration: none;
     color: #fff;
     position: relative;
-    top: 104px;
-    left: 60px;
   }
 }
 
 .arrow {
-
   position: relative;
 
   &::before {
@@ -162,8 +132,6 @@ body {
     border-bottom: 1px solid #fff;
     width: 43px;
     position: absolute;
-    top: 4px;
-    left: 78px;
   }
 
   &::after {
@@ -174,13 +142,10 @@ body {
     position: absolute;
     width: 4px;
     height: 4px;
-    left: 115px;
-    top: 2px;
   }
 }
 
 .products {
-
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
@@ -201,39 +166,22 @@ body {
   width: 206px;
   height: 261px;
   display: inline-block;
-  padding: 0 29px;
   position: relative;
-
-  &:first-of-type {
-    padding-left: 12px;
-  }
 
   &:nth-of-type(2)::before,
   &:nth-of-type(3)::before,
   &:nth-of-type(4)::before {
     content: "";
     position: absolute;
-    top: 42px;
-    left: -2px;
     width: 0;
     height: 100px;
     border-right: 2px solid rgba(0, 0, 0, .2);
-  }
-
-  &:last-of-type {
-    padding-right: 12px;
-  }
-
-  &__image {
-    padding-left: 11px;
-    margin-bottom: 25px;
   }
 
   &__title {
     display: block;
     font-size: 12px;
     line-height: 11px;
-    margin-bottom: 6px;
   }
 
   &__price {
@@ -248,13 +196,11 @@ body {
     justify-content: flex-end;
     align-items: center;
     position: relative;
-    top: -12px;
   }
 
   &__color {
     width: 7px;
     height: 7px;
-    margin-left: 8px;
     border-radius: 50%;
 
     &--grey {
@@ -371,7 +317,6 @@ body {
   }
 
   .arrow {
-    
     &::before {
     top: 5px;
     left: 94px;
