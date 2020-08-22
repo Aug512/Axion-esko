@@ -289,6 +289,7 @@ body {
   height: 345px;
   background: url("/img/video.jpg") 50% 50% no-repeat;
   border: 8px solid rgba(255, 255, 255, 0.8);
+  position: relative;
 }
 
 .about-us__title {
@@ -318,8 +319,11 @@ body {
 
 .about-us .play-button {
   position: absolute;
-  top: 224px;
-  left: 332px;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  margin: auto;
   width: 46.8px;
   height: 46.8px;
   background: #fff;
