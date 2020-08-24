@@ -19,17 +19,18 @@
         <a href="#" class="nav__link">Legacy</a>
         <a href="#" class="nav__link">Help</a>
       </nav>
-      <div class="header__sandwitch-button"></div>
+      <div class="header__sandwitch-button" id="mobile-menu"></div>
       <div class="header__user-activity user-activity">
         <input type="text" class="user-activity__search">
         <button class="user-activity__search--button">Search</button>
         <a href="#" class="user-activity__login">Sign in</a>
         <a href="#" class="user-activity__cart">Cart<span class="user-activity__cart--items-counter">1</span></a>
-        <button class="user-activity__lang">
-          <img class="user-activity__lang--us" src="/img/USA.svg" title="USA.svg">
+        <button class="user-activity__lang">United States<img class="user-activity__lang--us" src="/img/USA.svg" title="USA.svg">
         </button>
       </div>
     </header>
+
+    <div class="menu-spacer"></div>
 
     <div class="banner">
       <h1 class="banner__title">Legendary footwear reborn.</h1>
@@ -199,5 +200,7 @@
     <span class="footer__copyright">© 2019 Axion. All rights reserved.</span>
   </footer>
   
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="js/mobile-menu.js"></script>
 </body>
 </html>

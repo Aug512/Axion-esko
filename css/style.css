@@ -3,6 +3,16 @@ body {
   margin: 0;
 }
 
+a {
+  opacity: 1;
+  -webkit-transition: opacity .4s ease-in-out;
+  transition: opacity .4s ease-in-out;
+}
+
+a:hover {
+  opacity: .6;
+}
+
 .header {
   height: 95px;
   display: -webkit-box;
@@ -65,6 +75,13 @@ body {
   border: none;
   background: url("/img/css_sprites.png") -90px -10px;
   outline: none;
+  cursor: pointer;
+}
+
+.user-activity__search--button:hover {
+  opacity: .6;
+  -webkit-transition: opacity .4 ease-in-out;
+  transition: opacity .4 ease-in-out;
 }
 
 .user-activity__login {
@@ -107,6 +124,9 @@ body {
   border: none;
   padding: 0;
   background-color: transparent;
+  outline: none;
+  cursor: pointer;
+  font-size: 0;
 }
 
 .user-activity__lang--us {
@@ -179,8 +199,6 @@ body {
   line-height: 21px;
   text-align: center;
   text-transform: uppercase;
-  -ms-flex-preferred-size: 100%;
-      flex-basis: 100%;
   margin-top: 0;
   margin-bottom: 16px;
 }
@@ -233,6 +251,7 @@ body {
   width: 7px;
   height: 7px;
   border-radius: 50%;
+  cursor: pointer;
 }
 
 .product-card__color--grey {
@@ -328,6 +347,14 @@ body {
   height: 46.8px;
   background: #fff;
   border-radius: 50%;
+  cursor: pointer;
+  opacity: 1;
+  -webkit-transition: opacity .4s ease-in-out;
+  transition: opacity .4s ease-in-out;
+}
+
+.about-us .play-button:hover {
+  opacity: .6;
 }
 
 .about-us .play-button::before {

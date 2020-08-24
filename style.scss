@@ -3,6 +3,15 @@ body {
   margin: 0;
 }
 
+a {
+  opacity: 1;
+  transition: opacity .4s ease-in-out;
+
+  &:hover {
+    opacity: .6;
+  }
+}
+
 .header {
   height: 95px;
   display: flex;
@@ -47,6 +56,12 @@ body {
       border: none;
       background: url('/img/css_sprites.png') -90px -10px;
       outline: none;
+      cursor: pointer;
+
+      &:hover {
+        opacity: .6;
+        transition: opacity .4 ease-in-out;
+      }
     }
   }
 
@@ -90,6 +105,9 @@ body {
     border: none;
     padding: 0;
     background-color: transparent;
+    outline: none;
+    cursor: pointer;
+    font-size: 0;
 
     &--us {
       width: 100%;
@@ -156,7 +174,6 @@ body {
     line-height: 21px;
     text-align: center;
     text-transform: uppercase;
-    flex-basis: 100%;
     margin-top: 0;
     margin-bottom: 16px;
   }
@@ -202,6 +219,7 @@ body {
     width: 7px;
     height: 7px;
     border-radius: 50%;
+    cursor: pointer;
 
     &--grey {
       background-color: #c4c4c4;
@@ -293,6 +311,13 @@ body {
     height: 46.8px;
     background: #fff;
     border-radius: 50%;
+    cursor: pointer;
+    opacity: 1;
+    transition: opacity .4s ease-in-out;
+
+    &:hover {
+      opacity: .6;
+    }
 
     &::before {
       content:"";
