@@ -625,6 +625,7 @@
 
       &--items-counter {
         margin-left: 5px;
+        width: 14px;
       }
     }
   }
@@ -867,6 +868,18 @@
   
     &__color {
       margin-left: 8px;
+    }
+  }
+
+  .about-us {
+    .arrow {
+      &:before {
+        top: 4px;
+      }
+  
+      &:after {
+        top: 2px;
+      }
     }
   }
 

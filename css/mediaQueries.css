@@ -544,6 +544,7 @@
   }
   .user-activity__cart--items-counter {
     margin-left: 5px;
+    width: 14px;
   }
   .banner {
     height: 253px;
@@ -723,6 +724,12 @@
   }
   .product-card__color {
     margin-left: 8px;
+  }
+  .about-us .arrow:before {
+    top: 4px;
+  }
+  .about-us .arrow:after {
+    top: 2px;
   }
   .arrow:before {
     top: 4px;
