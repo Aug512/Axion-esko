@@ -402,11 +402,20 @@
     right: 210px;
     margin-bottom: 30px;
   }
+  .product-cards {
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+    width: 100%;
+    margin-right: 21px;
+  }
   .product-card {
     width: 300px;
     height: 352px;
     padding-left: 35px;
-    padding-right: 12px;
+    padding-right: 33px;
+  }
+  .product-card:first-of-type {
+    margin-right: -21px;
   }
   .product-card:first-of-type .product-card__color--grey {
     -webkit-box-ordinal-group: 3;
