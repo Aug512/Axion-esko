@@ -105,8 +105,6 @@ a:hover {
 .user-activity__cart--items-counter {
   display: inline-block;
   text-align: center;
-  vertical-align: middle;
-  font-weight: bold;
   font-size: 10px;
   line-height: 17px;
   width: 15px;
@@ -390,6 +388,250 @@ a:hover {
 .about-us .arrow::after {
   top: 3px;
   left: 131px;
+}
+
+/* 2nd part starts here */
+.articles {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  margin-bottom: 61px;
+}
+
+.articles__title {
+  font-size: 22px;
+  line-height: 21px;
+  text-align: center;
+  text-transform: uppercase;
+  margin-bottom: 41px;
+  width: 100%;
+}
+
+.articles__card {
+  width: 307px;
+}
+
+.article-card:first-of-type .article-card__img {
+  width: 307px;
+  height: 147px;
+  -o-object-fit: cover;
+     object-fit: cover;
+  padding-bottom: 1px;
+}
+
+.article-card__img {
+  margin-bottom: 10px;
+}
+
+.article-card__title {
+  font-size: 18px;
+  line-height: 17px;
+  margin-bottom: 11px;
+}
+
+.article-card__text {
+  margin-top: 0;
+  margin-bottom: 16px;
+  font-size: 14px;
+  line-height: 17px;
+}
+
+.article-bottom {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.article-bottom__link {
+  font-size: 12px;
+  line-height: 11px;
+  text-transform: uppercase;
+  color: #000;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.article-bottom .arrow::before {
+  left: 93px;
+  width: 28px;
+  border-color: #000;
+}
+
+.article-bottom .arrow::after {
+  border-color: #000;
+}
+
+.article-bottom__date {
+  font-size: 12px;
+  line-height: 11px;
+  text-transform: uppercase;
+  color: #000;
+  text-decoration: none;
+  font-weight: bold;
+  opacity: .3;
+}
+
+.photos {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  margin-bottom: 80px;
+}
+
+.photos__hashtag {
+  font-size: 18px;
+  line-height: 17px;
+  text-transform: uppercase;
+  opacity: .3;
+  width: 100%;
+  text-align: right;
+  margin-bottom: 10px;
+  cursor: pointer;
+  -webkit-transition: opacity .4s ease-in-out;
+  transition: opacity .4s ease-in-out;
+}
+
+.photos__hashtag:hover {
+  opacity: .6;
+}
+
+.photos__photo {
+  width: 147px;
+}
+
+.photos__photo:nth-of-type(8) {
+  display: none;
+}
+
+.footer {
+  background-color: #000;
+  font-size: 12px;
+  line-height: 11px;
+  color: #fff;
+}
+
+.footer .link {
+  display: block;
+  text-decoration: none;
+  color: #fff;
+  margin-bottom: 7px;
+}
+
+.footer .title {
+  text-transform: uppercase;
+  margin-bottom: 11px;
+}
+
+.footer__wrapper {
+  width: 830px;
+  margin: 0 auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  padding: 54px 170px 33px 170px;
+}
+
+.footer__account {
+  width: 200px;
+  padding-left: 30px;
+}
+
+.footer__service {
+  width: 200px;
+}
+
+.footer__misc {
+  width: 200px;
+}
+
+.footer__social {
+  width: 200px;
+}
+
+.footer__copyright {
+  width: 100%;
+  text-align: center;
+  padding-top: 52px;
+  margin-left: -2px;
+}
+
+.social__link {
+  width: 20px;
+  height: 20px;
+  margin-right: 25px;
+  content: "";
+  position: absolute;
+}
+
+.social__links {
+  position: relative;
+}
+
+.social__links--facebook {
+  background: url("/img/css_sprites.png") -10px -10px;
+  left: -6px;
+}
+
+.social__links--twitter {
+  background: url("/img/css_sprites.png") -50px -50px;
+  left: 32px;
+}
+
+.social__links--instagram {
+  background: url("/img/css_sprites.png") -50px -10px;
+  left: 75px;
+}
+
+.social__links--pinterest {
+  background: url("/img/css_sprites.png") -10px -50px;
+  left: 118px;
+}
+
+.sign-up {
+  margin-bottom: 34px;
+}
+
+.sign-up__title {
+  text-transform: uppercase;
+  margin-bottom: 7px;
+}
+
+.sign-up__text {
+  display: block;
+  margin-bottom: 11px;
+}
+
+.sign-up__button {
+  border: 1.5px solid #fff;
+  padding: 8px 46.5px;
+  background-color: transparent;
+  color: #fff;
+  text-transform: uppercase;
+  text-align: center;
+  font-size: 10px;
+  font-weight: 700;
+  -webkit-transition: opacity .4s ease-in-out;
+  transition: opacity .4s ease-in-out;
+  cursor: pointer;
+}
+
+.sign-up__button:hover {
+  opacity: .4;
 }
 
 /* SPRITES !! */
